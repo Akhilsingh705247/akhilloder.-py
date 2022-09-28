@@ -100,7 +100,7 @@ def logo():
 		colors = [35,33,36 ]
 
 		x = """
-\033[1;93m---------------------------> VERSION 1.0 <----------------------------------
+\033[1;93m---------------------------> VERSION 6.0 <----------------------------------
 \033[1;98m____________________________________________________________________________
 \033[1;97m|    ______                                                                |
 \033[1;93m|   /      \                                                               |
@@ -112,7 +112,7 @@ def logo():
 \033[1;95m|   \$$    $$ \$$    $$| $$       \$$    $$ \$$    $$        E             |
 \033[1;92m|    \$$$$$$   \$$$$$$  \$$       _\$$$$$$$  \$$$$$$$        R             |
 \033[1;95m|                                |  \__| $$                                |
-\033[1;92m|                                 \$$    $$                                |
+\033[1;92m|                                 \$$    $$        |
 \033[1;93m|                                  \$$$$$$                                 |
 |__________________________________________________________________________|"""
 		for N, line in enumerate(x.split("\n")):
@@ -142,10 +142,10 @@ def comment_on_posts(posts):
 
 			
 			if s.ok:
-				print (BOLD+GREEN+' [+] Sahii Haii .. | [+] Time :: ',datetime.now().strftime('%Y-%m-%d %I:%M:%S %p'),"\n [+] Han Chala Gaya Tera Comment ==> " +message)
+				print (BOLD+GREEN+' [+] BILKUL RIGHT .. | [+] Time :: ',datetime.now().strftime('%Y-%m-%d %I:%M:%S %p'),"\n [+] Han Chala Gaya Tera Comment ==> " +message)
 				time.sleep(timm)
 			else:
-				print(BOLD+RED+' [x] Lund Sahii Ha Mera :: [+] Loda Gaya Tera Comment :: '+tt,'\n','[-] Comment Error :: ==> '+message)
+				print(BOLD+RED+' [x] GALAT HAI YR:: [+] Loda Gaya Tera Comment :: '+tt,'\n','[-] Comment Error :: ==> '+message)
 				time.sleep(timm)
 		except Exception as e:
 			print(e)
